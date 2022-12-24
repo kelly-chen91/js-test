@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Hello World!</title>
+    </head>
+    <body>
+        <script>
+            console.log("Hello World!")
+            console.log(add7(5))
+            console.log(multiply(7,5))
+            console.log(capitalize("HELLO"))
+            console.log(lastLetter("abcd"))
+            function add7(x){
+                return x + 7;
+            }
+            function multiply(x, y){
+                return x * y;
+            }
+            function capitalize(text){
+                let capitalizeString = text.substring(0,1).toUpperCase();
+                capitalizeString += text.substring(1, text.length).toLowerCase();
+                return capitalizeString;
+            }
+            function lastLetter(text){
+                return text.substring(text.length-1, text.length);
+            }
+        </script>
+    </body>
+</html>
